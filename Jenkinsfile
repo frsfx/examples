@@ -49,7 +49,7 @@ pipeline {
                 
                 kubernetesDeploy(
                   kubeconfigId: 'Kubeconfig',
-                  configs: 'guestbook-controller.json'
+                  configs: 'guestbook-controller.json',
                   enableConfigSubstitution: true
                   )
             }
